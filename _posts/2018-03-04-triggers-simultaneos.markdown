@@ -11,7 +11,7 @@ Que pasa cuando varios triggers se activan en la misma fase? O ante el mismo eve
 
 ## Pertenecientes al mismo jugador
 
-Supongamos que tenemos [Zendikar Resurgent](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=433092) y [Hazoret's Monument](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=426931) en juego, y casteamos [Goblin Trailblazer]()
+Supongamos que tenemos [Zendikar Resurgent](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=433092) y [Hazoret's Monument](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=426931) en juego, y casteamos [Goblin Trailblazer](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=439762)
 
 | Stack | En Juego |
 |:--|:--|
@@ -35,19 +35,17 @@ Si ponemos el trigger de `Zendikar Resurgent` y luego el de `Hazoret's Monument`
 
 Supongamos un juego 1v1, el Jugador 1 esta iniciando su `upkeep` (mantenimiento) y tiene en juego un [Shivan Dragon](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=429911) y un [Wolfcaller's Howl](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=430388), mientras que su oponente (Jugador 2) controla a [Sheoldred, Whispering One](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=438674). Que sucede? Obtiene el token de criatura `Wolf 2/2` primero para sacrificarlo o esta obligado a sacrificar `Shivan Dragon` ?
 
-### Jugador 1
+### Estado de la partida en el Upkeep del Jugador 1, Jugador 1 tiene prioridad
 
 | Jugador 1 |
 |:--|
 | ![]({{"assets/img/shivan-dragon.png" | absolute_url}}) ![]({{"assets/img/wolfcaller-howl.png" | absolute_url}}) |
-
-### Jugador 2
-
+|:--|
 | Jugador 2 |
 |:--|
 | ![]({{"assets/img/sheoldred.png" | absolute_url}}) |
 
-Este caso es considerado por las reglas en la seccion **603 (Triggered Abilities)** y la seccion **116 (Timing and Priority)** de las Reglas.
+Este caso es considerado por las reglas en la sección **603 (Triggered Abilities)** y la sección **116 (Timing and Priority)** de las Reglas.
 
 > **603.3.** Once an ability has triggered, its controller puts it on the stack as an object that’s not a card the
 next time a player would receive priority. See rule 116, “Timing and Priority.” The ability becomes
@@ -68,5 +66,5 @@ En este caso, lamentablemente, el Jugador 1 esta obligado a sacrificar su `Shiva
 | ![]({{"assets/img/s-trigger.png" | absolute_url}}) | `Sheoldred, Whispering One` Trigger|
 | ![]({{"assets/img/wch-trigger.png" | absolute_url}}) | `Wolfcaller's Howl` Trigger|
 
-1. Se resuelve el trigger de `Sheoldred, Whispering One`: Jugador 1 sacrifica una criatura (en este caso `Shivan Dragon`)
+1. Se resuelve el trigger de `Sheoldred, Whispering One`: Jugador 1 sacrifica una criatura (en este caso, el único target válido es `Shivan Dragon`)
 2. Se resuelve el trigger de `Wolfcaller's Howl`: El Jugador 1 crea un token de criatura `Wolf 2/2`
