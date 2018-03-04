@@ -47,6 +47,20 @@ Supongamos un juego 1v1, el Jugador 1 esta iniciando su `upkeep` (mantenimiento)
 |:--|
 | ![]({{"assets/img/sheoldred.png" | absolute_url}}) |
 
+Este caso es considerado por las reglas en la seccion **603 (Triggered Abilities)** y la seccion **116 (Timing and Priority)** de las Reglas.
+
+> **603.3.** Once an ability has triggered, its controller puts it on the stack as an object that’s not a card the
+next time a player would receive priority. See rule 116, “Timing and Priority.” The ability becomes
+the topmost object on the stack. It has the text of the ability that created it, and no other
+characteristics. It remains on the stack until it’s countered, it resolves, a rule causes it to be removed
+from the stack, or an effect moves it elsewhere.
+
+> **116.5.** Each time a player would get priority, the game first performs all applicable state-based actions
+as a single event (see rule 704, “State-Based Actions”), then repeats this process until no state-based
+actions are performed. Then triggered abilities are put on the stack (see rule 603, “Handling
+Triggered Abilities”). These steps repeat in order until no further state-based actions are performed
+and no abilities trigger. Then the player who would have received priority does so.
+
 En este caso, lamentablemente, el Jugador 1 esta obligado a sacrificar su `Shivan Dragon`. Esto se debe a que según las reglas, el jugador activo (el jugador cuyo turno esta iniciando)  pone sus triggers en el stack primero, pasando prioridad a los jugadores no activos que solo entonces pueden poner sus trigger en el stack. En nuestro caso, el stack queda así:
 
 | Stack | |
