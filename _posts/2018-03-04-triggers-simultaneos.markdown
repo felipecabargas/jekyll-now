@@ -5,7 +5,7 @@ author: "A. Cabargas"
 categories: rules
 tags: [stack]
 image: stack.jpg
-title:  "[#1] Triggers simultáneos"
+title:  "#1 | Triggers simultáneos"
 ---
 Que pasa cuando varios triggers se activan en la misma fase? O ante el mismo evento? Que pasa si esos triggers pertenecen al mismo jugador? Que pasa si son de diferentes jugadores? Eso es lo que intentare explicar hoy en la primera edición de "Jueceando"
 
